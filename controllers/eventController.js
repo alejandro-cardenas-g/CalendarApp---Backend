@@ -32,7 +32,7 @@ exports.crearEvento = async(req, res = response) => {
         const EventoGuardado = await evento.save();
 
         return res.status(201).json({
-            okay: true,
+            ok: true,
             evento: EventoGuardado
         });
 
